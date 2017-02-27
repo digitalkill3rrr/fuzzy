@@ -34,6 +34,7 @@
 .deep {
   transform: translateZ(-600px) scale(3);
   z-index: 2;
+  left: -8px;
 }
 
 .parallax_group {
@@ -51,6 +52,7 @@
   transform: translate(-50%, -50%);
   font-family: 'Barrio', cursive;
   font-size: 45px;
+  color: white;
 }
 
 #group1 {
@@ -85,15 +87,15 @@
 }
 
 #group4 .deep {
-  background: rgb(184,223,101);
+  background: black;
 }
 
 #group5 .base {
-  background: rgb(214,229,100);
+  background: black;
 }
 
 #group6 .back {
-  background: rgb(245,235,100);
+  background: black;
 }
 
 #group7 .base {

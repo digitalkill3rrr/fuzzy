@@ -6,13 +6,26 @@
 
 #welcome {
   color: red;
+  -webkit-animation: blink 6.1s linear infinite;
+  animation: blink 6.1s linear infinite;
+}
+
+@-webkit-keyframes welcome {
+  50% { color: rgb(34, 34, 34); }
+  51% { color: rgba(34, 34, 34, 0); }
+  100% { color: rgba(34, 34, 34, 0); }
+}
+@keyframes welcome {
+  50% { color: rgb(34, 34, 34); }
+  51% { color: rgba(34, 34, 34, 0); }
+  100% { color: rgba(34, 34, 34, 0); }
 }
 
 /*PAGE 2*/
 
 #die {
   position: relative;
-  left: 465px;
+  left: 457px;
   display: block;
   width: 500px;
   height: 50px;
@@ -37,7 +50,7 @@
 
 #quote2 {
   position: relative;
-  left: 4px;
+  left: -4px;
   color: red;
 }
 
@@ -55,14 +68,14 @@ background: black;
 
 #p3 {
   position: relative;
-  left: 30px;
+  left: 50px;
   background: black;
   width: 110px;
 }
 
 #p4 {
   position: relative;
-  left: 5px;
+  left: 25px;
   background: black;
   width: 160px;
 }
@@ -102,4 +115,34 @@ background: black;
 .button:hover {
   background: red;
   transition: all .5s ease-in-out;
+}
+
+#first {
+  position: relative;
+  left: 457px;
+  display: block;
+  width: 500px;
+  height: 50px;
+  overflow-x: hidden;
+  color: red;
+}
+
+#second {
+  position: relative;
+  left: 457px;
+  display: block;
+  width: 500px;
+  height: 50px;
+  overflow-x: hidden;
+  color: red;
+}
+
+#third {
+  position: relative;
+  left: 457px;
+  display: block;
+  width: 500px;
+  height: 50px;
+  overflow-x: hidden;
+  color: red;
 }

@@ -1,0 +1,80 @@
+.buttonLeft {
+  top: 50%;
+  left: 80px;
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+.buttonLeft:hover .uplinel,
+.buttonRight:hover .downliner {
+  left: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.buttonLeft:hover .downlinel,
+.buttonRight:hover .upliner {
+  left: -10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.buttonRight {
+  top: 50%;
+  right: 80px;
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+.buttonDown {
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  transition: all 0.5s ease;
+}
+
+.uplinel,
+.upliner {
+  position: absolute;
+  background: white;
+  width: 50px;
+  height: 2px;
+  top: 13px;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.downlinel,
+.downliner {
+  position: absolute;
+  background: white;
+  width: 50px;
+  left: 0;
+  height: 2px;
+  bottom: 13px;
+  transition: all 0.5s ease-in-out;
+}
+
+.vertline {
+  position: absolute;
+  background: white;
+  width: 70px;
+  height: 3px;
+  bottom: 30px;
+}
+
+.buttonDown:hover {
+  transform: rotate(90deg);
+  transition: all 0.5s ease;
+}
+
+  .circle:hover {
+    opacity: 0.1;
+    transform: scale(3);
+  }*/

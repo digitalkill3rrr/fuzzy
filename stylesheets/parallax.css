@@ -49,6 +49,8 @@
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  font-family: 'Barrio', cursive;
+  font-size: 45px;
 }
 
 #group1 {
@@ -71,15 +73,15 @@
 }
 
 #group1 .base {
-  background: firebrick;
+  background: black;
 }
 
 #group2 .back {
-  background: white;
+  background: black;
 }
 
 #group3 .base {
-  background: white;
+  background: black;
 }
 
 #group4 .deep {
@@ -95,5 +97,5 @@
 }
 
 #group7 .base {
-  background: rgb(255,241,100);
+  background: black;
 }

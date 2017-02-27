@@ -4,15 +4,24 @@
   padding: 0;
 }
 
+#welcome {
+  color: red;
+}
+
 /*PAGE 2*/
 
 #die {
   position: relative;
-  left: 426px;
+  left: 465px;
   display: block;
   width: 500px;
   height: 50px;
   overflow-x: hidden;
+  color: red;
+}
+
+#textdie {
+  color: white;
 }
 
 /*PAGE 3*/
@@ -23,7 +32,7 @@
 }
 
 #quote1 {
-  color: black;
+  color: white;
 }
 
 #quote2 {
@@ -34,33 +43,33 @@
 
 #p1 {
 position: relative;
-background: white;
+background: black;
 }
 
 #p2 {
   position: relative;
   left: 154px;
-  background: white;
+  background: black;
   width: 100px;
 }
 
 #p3 {
   position: relative;
   left: 30px;
-  background: white;
+  background: black;
   width: 110px;
 }
 
 #p4 {
   position: relative;
   left: 5px;
-  background: white;
+  background: black;
   width: 160px;
 }
 
 #p5 {
   position: relative;
-  background: white;
+  background: black;
   width: 280px;
 }
 
@@ -80,12 +89,14 @@ background: white;
 #button {
   position: relative;
   font-size: 25px;
+  color: white;
 }
 
 #underbuttonText {
   position: relative;
   top: 20px;
   font-size: 15px;
+  color: white;
 }
 
 .button:hover {

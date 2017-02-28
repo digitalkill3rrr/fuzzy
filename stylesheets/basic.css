@@ -6,31 +6,37 @@
 
 #welcome {
   color: red;
-  -webkit-animation: blink 6.1s linear infinite;
-  animation: blink 6.1s linear infinite;
 }
 
-@-webkit-keyframes welcome {
-  50% { color: rgb(34, 34, 34); }
-  51% { color: rgba(34, 34, 34, 0); }
-  100% { color: rgba(34, 34, 34, 0); }
+#error {
+  -webkit-animation: error 5s infinite;
+  animation: error 5s infinite;
+  animation-timing-function: cubic-bezier(.8,2,.2,-1);
 }
-@keyframes welcome {
-  50% { color: rgb(34, 34, 34); }
-  51% { color: rgba(34, 34, 34, 0); }
-  100% { color: rgba(34, 34, 34, 0); }
+
+@-webkit-keyframes error {
+  30% { color: white; }
+  60% { color: white; }
+  100% { color: black; }
+}
+@keyframes error {
+  30% { color: white; }
+  60% { color: white; }
+  100% { color: black; }
 }
 
 /*PAGE 2*/
 
 #die {
   position: relative;
-  left: 457px;
+  left: 240px;
   display: block;
-  width: 500px;
-  height: 50px;
+  width: 2000px;
+  height: 150px;
   overflow-x: hidden;
   color: red;
+  text-align: center;
+  line-height: 100px;
 }
 
 #textdie {
@@ -41,7 +47,7 @@
 
 .container {
   text-align: center;
-  font-size: 45px;
+  font-size: 55px;
 }
 
 #quote1 {
@@ -50,7 +56,7 @@
 
 #quote2 {
   position: relative;
-  left: -4px;
+  left: 5px;
   color: red;
 }
 
@@ -61,21 +67,21 @@ background: black;
 
 #p2 {
   position: relative;
-  left: 154px;
+  left: 156px;
   background: black;
   width: 100px;
 }
 
 #p3 {
   position: relative;
-  left: 50px;
+  left: 30px;
   background: black;
   width: 110px;
 }
 
 #p4 {
   position: relative;
-  left: 25px;
+  left: 5px;
   background: black;
   width: 160px;
 }
@@ -93,16 +99,14 @@ background: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 100px;
+  width: 400px;
+  height: 150px;
   border: 2px solid red;
-  transition: all .5s ease-in-out;
-}
-
-#button {
-  position: relative;
-  font-size: 25px;
+  transition: all .4s ease-in-out;
+  font-size: 55px;
   color: white;
+  cursor: pointer;
+  line-height: 100px;
 }
 
 #underbuttonText {
@@ -118,31 +122,58 @@ background: black;
 }
 
 #first {
-  position: relative;
-  left: 457px;
-  display: block;
-  width: 500px;
-  height: 50px;
+  width: 170px;
+  height: 250px;
   overflow-x: hidden;
   color: red;
+  font-size: 150px;
 }
 
 #second {
-  position: relative;
-  left: 457px;
-  display: block;
-  width: 500px;
-  height: 50px;
+  width: 170px;
+  height: 250px;
   overflow-x: hidden;
   color: red;
+  font-size: 150px;
 }
 
 #third {
-  position: relative;
-  left: 457px;
-  display: block;
-  width: 500px;
-  height: 50px;
+  width: 170px;
+  height: 250px;
   overflow-x: hidden;
   color: red;
+  font-size: 150px;
+}
+
+.third,
+.second,
+.first {
+  top: 170px;
+  position: relative;
+  width: 150px;
+  overflow: hidden;
+}
+
+.third {
+  right: 150%;
+}
+
+.second {
+ right: 0;
+}
+
+.first {
+  left: 150%;
+}
+
+.wrapper {
+  position: relative;
+  text-align: center;
+}
+
+#pixels {
+  position: relative;
+  z-index: 999;
+  color: red;
+  font-size: 100px;
 }

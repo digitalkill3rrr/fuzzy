@@ -166,11 +166,6 @@ background: black;
   left: 150%;
 }
 
-.wrapper {
-  position: relative;
-  text-align: center;
-}
-
 #pixels {
   position: relative;
   z-index: 999;

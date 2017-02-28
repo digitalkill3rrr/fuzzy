@@ -1,8 +1,13 @@
+.wrapper {
+  position: absolute;
+  width: 1300px;
+  overflow: hidden;
+}
+
 .parallax {
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
   -webkit-perspective: 1px;
   perspective: 300px;
   font-size: 200%;

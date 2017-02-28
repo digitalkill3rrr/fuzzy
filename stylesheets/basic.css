@@ -177,3 +177,80 @@ background: black;
   color: red;
   font-size: 100px;
 }
+
+#pic {
+  background-image: url(../skull.png);
+  width: 340px;
+  height: 390px;
+  background-size: cover;
+}
+
+.move {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#orbit1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 120px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /*border: 2px solid red;*/
+}
+
+#orbit2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /*border: 2px solid red;*/
+  right: 30px;
+  top: 15px;
+}
+
+#eye1 {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  animation: eye1 4s linear infinite;
+  transform: rotate(45deg) translateX(15px) rotate(-45deg);
+}
+
+#eye2 {
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  position: relative;
+  animation: eye2 2s linear infinite;
+  transform: rotate(-45deg) translateX(15px) rotate(45deg);
+}
+
+@-webkit-keyframes eye1 {
+  from {  -webkit-transform: rotate(0deg) translateX(15px) rotate(0deg); }
+  to   {  -webkit-transform: rotate(360deg) translateX(15px) rotate(-360deg);}
+}
+
+@keyframes eye1 {
+  from {  -webkit-transform: rotate(0deg) translateX(15px) rotate(0deg); }
+  to   {  -webkit-transform: rotate(360deg) translateX(15px) rotate(-360deg);}
+}
+
+@-webkit-keyframes eye2 {
+  from {  -webkit-transform: rotate(0deg) translateX(15px) rotate(0deg); }
+  to   {  -webkit-transform: rotate(360deg) translateX(15px) rotate(-360deg);}
+}
+
+@keyframes eye2 {
+  from {  -webkit-transform: rotate(0deg) translateX(15px) rotate(0deg); }
+  to   {  -webkit-transform: rotate(360deg) translateX(15px) rotate(-360deg);}
+}

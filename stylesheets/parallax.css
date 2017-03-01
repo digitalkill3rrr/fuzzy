@@ -12,6 +12,7 @@
   -webkit-perspective: 1px;
   perspective: 300px;
   font-size: 200%;
+  width: 1730px;
 }
 
 .parallax_layer {

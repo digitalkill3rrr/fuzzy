@@ -19,6 +19,7 @@
   top: 0;
   right: 0;
   bottom: 0;
+  left: -5px;
 }
 
 .base {
@@ -39,6 +40,7 @@
 .deep {
   transform: translateZ(-600px) scale(3);
   z-index: 2;
+  left: -8px;
 }
 
 .parallax_group {

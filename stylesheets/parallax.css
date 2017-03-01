@@ -7,6 +7,7 @@
   position: absolute;
   width: 1730px;
   overflow: hidden;
+  background: black;
 }
 
 .parallax {

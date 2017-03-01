@@ -1,3 +1,7 @@
+.body {
+  background: black;
+}
+
 .wrapper {
   position: absolute;
   width: 1730px;

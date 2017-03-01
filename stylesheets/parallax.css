@@ -12,6 +12,7 @@
   -webkit-perspective: 1px;
   perspective: 300px;
   font-size: 200%;
+  width: 1730px;
 }
 
 .parallax_layer {
@@ -40,7 +41,6 @@
 .deep {
   transform: translateZ(-600px) scale(3);
   z-index: 2;
-  left: -8px;
 }
 
 .parallax_group {

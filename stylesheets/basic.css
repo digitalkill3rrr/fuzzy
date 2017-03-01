@@ -175,11 +175,14 @@ background: black;
   left: 150%;
 }
 
+<<<<<<< HEAD
 .content_wrapper {
   position: relative;
   text-align: center;
 }
 
+=======
+>>>>>>> master
 #pixels {
   position: relative;
   z-index: 999;

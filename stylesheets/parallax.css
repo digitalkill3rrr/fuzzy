@@ -1,3 +1,8 @@
+.body {
+  background: black;
+  height: 100vh;
+}
+
 .wrapper {
   position: absolute;
   width: 1730px;
@@ -18,29 +23,24 @@
   top: 0;
   right: 0;
   bottom: 0;
-  left: -10px;
 }
 
 .base {
-  -webkit-transform: translateZ(0);
   transform: translateZ(0);
   z-index: 4;
 }
 
 .back {
-  -webkit-transform: translateZ(-300px) scale(2);
   transform: translateZ(-300px) scale(2);
   z-index: 3;
 }
 
 .fore {
-  -webkit-transform: translateZ(90px) scale(.7);
   transform: translateZ(90px) scale(.7);
   z-index: 1;
 }
 
 .deep {
-  -webkit-transform: translateZ(-600px) scale(3);
   transform: translateZ(-600px) scale(3);
   z-index: 2;
   left: -8px;
@@ -49,12 +49,8 @@
 .parallax_group {
   position: relative;
   height: 100vh;
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .title {

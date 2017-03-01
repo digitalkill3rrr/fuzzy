@@ -6,6 +6,7 @@
 }
 
 .parallax {
+  width: 1730px;
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;

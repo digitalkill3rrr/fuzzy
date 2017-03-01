@@ -8,6 +8,7 @@ $(function() {
 
   $('.parallax').scroll(function(e) {
     counter = -($('#group1').offset().top)
+    counter = Math.floor(counter)
     $('#pixels').text(counter)
     console.log(counter)
   });

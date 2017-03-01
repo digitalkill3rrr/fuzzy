@@ -1,6 +1,10 @@
 .wrapper {
   position: absolute;
+<<<<<<< HEAD
   width: (100vw + 20px) ;
+=======
+  width: 100vw;
+>>>>>>> gh-pages
   overflow: hidden;
   background: black;
 }
@@ -12,7 +16,11 @@
   -webkit-perspective: 1px;
   perspective: 300px;
   font-size: 200%;
+<<<<<<< HEAD
   width: 1730px;
+=======
+  width: calc(100vw + 20px);
+>>>>>>> gh-pages
 }
 
 .parallax_layer {

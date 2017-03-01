@@ -1,6 +1,6 @@
 .wrapper {
   position: absolute;
-  width: 1300px;
+  width: (100vw + 20px) ;
   overflow: hidden;
   background: black;
 }

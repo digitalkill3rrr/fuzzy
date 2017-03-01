@@ -1,6 +1,6 @@
 .wrapper {
   position: absolute;
-  width: 1730px;
+  width: 1300px;
   overflow: hidden;
   background: black;
 }
@@ -40,7 +40,6 @@
 .deep {
   transform: translateZ(-600px) scale(3);
   z-index: 2;
-  left: -8px;
 }
 
 .parallax_group {

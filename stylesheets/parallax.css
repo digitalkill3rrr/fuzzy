@@ -1,10 +1,6 @@
 .wrapper {
   position: absolute;
-<<<<<<< HEAD
-  width: (100vw + 20px) ;
-=======
-  width: 100vw;
->>>>>>> gh-pages
+  width: (100vw + 20px);
   overflow: hidden;
   background: black;
 }
@@ -16,11 +12,8 @@
   -webkit-perspective: 1px;
   perspective: 300px;
   font-size: 200%;
-<<<<<<< HEAD
   width: 1730px;
-=======
   width: calc(100vw + 20px);
->>>>>>> gh-pages
 }
 
 .parallax_layer {
@@ -56,6 +49,7 @@
   height: 100vh;
   transform-style: preserve-3d;
   transition: transform 0.5s;
+  background: black;
 }
 
 .title {
@@ -87,36 +81,4 @@
 #group4,
 #group6 {
   z-index: 2;
-}
-
-#group1 .base {
-  background: black;
-}
-
-#group2 .back {
-  background: black;
-}
-
-#group3 .base {
-  background: black;
-}
-
-#group4 .deep {
-  background: black;
-}
-
-#group5 .base {
-  background: black;
-}
-
-#group6 .back {
-  background: black;
-}
-
-#group7 .base {
-  background: black;
-}
-
-#group8 .base {
-  background: black;
 }

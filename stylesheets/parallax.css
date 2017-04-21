@@ -82,3 +82,10 @@
 #group6 {
   z-index: 2;
 }
+
+div.digits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 230px;
+}

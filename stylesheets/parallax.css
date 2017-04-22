@@ -29,20 +29,11 @@
   z-index: 4;
 }
 
-.back {
-  transform: translateZ(-300px) scale(2);
-  z-index: 3;
-}
-
 .fore {
   transform: translateZ(90px) scale(.7);
   z-index: 1;
 }
 
-.deep {
-  transform: translateZ(-600px) scale(3);
-  z-index: 2;
-}
 
 .parallax_group {
   position: relative;
@@ -50,6 +41,16 @@
   transform-style: preserve-3d;
   transition: transform 0.5s;
   background: black;
+}
+
+/*group1: simple layer, group2: fore-base layer*/
+
+#group1 {
+  z-index: 5;
+}
+
+#group2 {
+  z-index: 3;
 }
 
 .title {
@@ -61,24 +62,4 @@
   font-family: 'Barrio', cursive;
   font-size: 45px;
   color: white;
-}
-
-#group1 {
-  z-index: 5;
-}
-
-#group2,
-#group5,
-#group7 {
-  z-index: 3;
-}
-
-#group3,
-#group8 {
-  z-index: 4;
-}
-
-#group4,
-#group6 {
-  z-index: 2;
 }

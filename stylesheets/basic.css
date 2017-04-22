@@ -8,10 +8,14 @@ p, li {
   text-transform: uppercase;
 }
 
+/*PAGE 1*/
+
 #welcome {
   color: red;
   width: 510px;
 }
+
+/*PAGE 2*/
 
 #error {
   width: 540px;
@@ -26,13 +30,14 @@ p, li {
   60% { color: white; }
   100% { color: black; }
 }
+
 @keyframes error {
   30% { color: white; }
   60% { color: white; }
   100% { color: black; }
 }
 
-/*PAGE 2*/
+/*PAGE 3*/
 
 #die {
   position: relative;
@@ -52,6 +57,60 @@ p, li {
 }
 
 /*PAGE 3*/
+
+#first {
+  width: 170px;
+  height: 250px;
+  overflow-x: hidden;
+  color: red;
+  font-size: 150px;
+}
+
+#second {
+  width: 170px;
+  height: 250px;
+  overflow-x: hidden;
+  color: red;
+  font-size: 150px;
+}
+
+#third {
+  width: 170px;
+  height: 250px;
+  overflow-x: hidden;
+  color: red;
+  font-size: 150px;
+}
+
+.third,
+.second,
+.first {
+  top: 170px;
+  position: relative;
+  width: 150px;
+  overflow: hidden;
+}
+
+.second {
+ right: 0;
+}
+
+.first {
+  left: 150%;
+}
+
+.third {
+  right: 150%;
+}
+
+div.digits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 230px;
+}
+
+/*PAGE 4*/
 
 .container {
   text-align: center;
@@ -101,7 +160,7 @@ background: black;
   width: 280px;
 }
 
-/*BUTTON KILL*/
+/*PAGE 5*/
 
 .button {
   position: relative;
@@ -138,62 +197,12 @@ background: black;
   transition: all .5s ease-in-out;
 }
 
-#first {
-  width: 170px;
-  height: 250px;
-  overflow-x: hidden;
-  color: red;
-  font-size: 150px;
-}
-
-#second {
-  width: 170px;
-  height: 250px;
-  overflow-x: hidden;
-  color: red;
-  font-size: 150px;
-}
-
-#third {
-  width: 170px;
-  height: 250px;
-  overflow-x: hidden;
-  color: red;
-  font-size: 150px;
-}
-
-.third,
-.second,
-.first {
-  top: 170px;
-  position: relative;
-  width: 150px;
-  overflow: hidden;
-}
-
-.third {
-  right: 150%;
-}
-
-.second {
- right: 0;
-}
-
-.first {
-  left: 150%;
-}
-
 .content_wrapper {
   position: relative;
   text-align: center;
 }
 
-#pixels {
-  position: relative;
-  z-index: 999;
-  color: red;
-  font-size: 100px;
-}
+/*PAGE 6*/
 
 #pic {
   background-image: url(../skull.png);
@@ -201,6 +210,8 @@ background: black;
   height: 390px;
   background-size: cover;
 }
+
+/*PAGE 6*/
 
 .move {
   display: -webkit-box;
@@ -288,4 +299,13 @@ background: black;
 @keyframes eye2 {
   from {  -webkit-transform: rotate(0deg) translateX(15px) rotate(0deg); }
   to   {  -webkit-transform: rotate(360deg) translateX(15px) rotate(-360deg);}
+}
+
+/*PAGE 8*/
+
+#pixels {
+  position: relative;
+  z-index: 999;
+  color: red;
+  font-size: 100px;
 }

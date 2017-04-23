@@ -4,13 +4,23 @@
   padding: 0;
 }
 
-#welcome {
-  color: red;
+p, li {
+  text-transform: uppercase;
 }
 
+/*PAGE 1*/
+
+#welcome {
+  color: red;
+  width: 510px;
+}
+
+/*PAGE 2*/
+
 #error {
+  width: 540px;
   -webkit-animation: error 5s infinite;
-  animation: error 5s infinite;
+  animation: error 3s infinite;
   -webkit-animation-timing-function: cubic-bezier(.8,2,.2,-1);
   animation-timing-function: cubic-bezier(.8,2,.2,-1);
 }
@@ -20,13 +30,14 @@
   60% { color: white; }
   100% { color: black; }
 }
+
 @keyframes error {
   30% { color: white; }
   60% { color: white; }
   100% { color: black; }
 }
 
-/*PAGE 2*/
+/*PAGE 3*/
 
 #die {
   position: relative;
@@ -42,9 +53,64 @@
 
 #textdie {
   color: white;
+  width: 650px;
 }
 
 /*PAGE 3*/
+
+#first {
+  width: 170px;
+  height: 250px;
+  overflow-x: hidden;
+  color: red;
+  font-size: 150px;
+}
+
+#second {
+  width: 170px;
+  height: 250px;
+  overflow-x: hidden;
+  color: red;
+  font-size: 150px;
+}
+
+#third {
+  width: 170px;
+  height: 250px;
+  overflow-x: hidden;
+  color: red;
+  font-size: 150px;
+}
+
+.third,
+.second,
+.first {
+  top: 170px;
+  position: relative;
+  width: 150px;
+  overflow: hidden;
+}
+
+.second {
+ right: 0;
+}
+
+.first {
+  left: 150%;
+}
+
+.third {
+  right: 150%;
+}
+
+div.digits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 230px;
+}
+
+/*PAGE 4*/
 
 .container {
   text-align: center;
@@ -57,32 +123,33 @@
 
 #quote2 {
   position: relative;
-  left: 5px;
+  left: 4px;
   color: red;
 }
 
 #p1 {
 position: relative;
+left: -2px;
 background: black;
 }
 
 #p2 {
   position: relative;
-  left: 156px;
+  left: 154px;
   background: black;
   width: 100px;
 }
 
 #p3 {
   position: relative;
-  left: 30px;
+  left: 83px;
   background: black;
   width: 110px;
 }
 
 #p4 {
   position: relative;
-  left: 5px;
+  left: 3px;
   background: black;
   width: 160px;
 }
@@ -93,7 +160,7 @@ background: black;
   width: 280px;
 }
 
-/*BUTTON KILL*/
+/*PAGE 5*/
 
 .button {
   position: relative;
@@ -130,62 +197,12 @@ background: black;
   transition: all .5s ease-in-out;
 }
 
-#first {
-  width: 170px;
-  height: 250px;
-  overflow-x: hidden;
-  color: red;
-  font-size: 150px;
-}
-
-#second {
-  width: 170px;
-  height: 250px;
-  overflow-x: hidden;
-  color: red;
-  font-size: 150px;
-}
-
-#third {
-  width: 170px;
-  height: 250px;
-  overflow-x: hidden;
-  color: red;
-  font-size: 150px;
-}
-
-.third,
-.second,
-.first {
-  top: 170px;
-  position: relative;
-  width: 150px;
-  overflow: hidden;
-}
-
-.third {
-  right: 150%;
-}
-
-.second {
- right: 0;
-}
-
-.first {
-  left: 150%;
-}
-
 .content_wrapper {
   position: relative;
   text-align: center;
 }
 
-#pixels {
-  position: relative;
-  z-index: 999;
-  color: red;
-  font-size: 100px;
-}
+/*PAGE 6*/
 
 #pic {
   background-image: url(../skull.png);
@@ -193,6 +210,8 @@ background: black;
   height: 390px;
   background-size: cover;
 }
+
+/*PAGE 6*/
 
 .move {
   display: -webkit-box;
@@ -210,16 +229,14 @@ background: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  right: 120px;
+  right: 130px;
   width: 30px;
-  height: 30px;
+  height: 60px;
   border-radius: 50%;
   /*border: 2px solid red;*/
 }
@@ -232,11 +249,9 @@ background: black;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   position: relative;
   width: 30px;
-  height: 30px;
+  height: 70px;
   border-radius: 50%;
   /*border: 2px solid red;*/
   right: 30px;
@@ -284,4 +299,40 @@ background: black;
 @keyframes eye2 {
   from {  -webkit-transform: rotate(0deg) translateX(15px) rotate(0deg); }
   to   {  -webkit-transform: rotate(360deg) translateX(15px) rotate(-360deg);}
+}
+
+/*PAGE 7*/
+
+.thumbs {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  width: 400px;
+  height: 400px;
+  left: 240px;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  width: 510px;
+  right: 50px;
+  color: white;
+}
+
+/*PAGE 8*/
+
+#pixels {
+  position: relative;
+  z-index: 999;
+  color: red;
+  font-size: 100px;
 }

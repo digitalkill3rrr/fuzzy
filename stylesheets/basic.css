@@ -20,7 +20,7 @@ p, li {
 #error {
   width: 540px;
   -webkit-animation: error 5s infinite;
-  animation: error 5s infinite;
+  animation: error 3s infinite;
   -webkit-animation-timing-function: cubic-bezier(.8,2,.2,-1);
   animation-timing-function: cubic-bezier(.8,2,.2,-1);
 }
@@ -299,6 +299,33 @@ background: black;
 @keyframes eye2 {
   from {  -webkit-transform: rotate(0deg) translateX(15px) rotate(0deg); }
   to   {  -webkit-transform: rotate(360deg) translateX(15px) rotate(-360deg);}
+}
+
+/*PAGE 7*/
+
+.thumbs {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  width: 400px;
+  height: 400px;
+  left: 240px;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  width: 510px;
+  right: 50px;
+  color: white;
 }
 
 /*PAGE 8*/

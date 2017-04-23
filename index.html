@@ -214,8 +214,22 @@
 
       <div id="group1" class="parallax_group">
         <div class="title">
-          <div id="demons eyes">
+          <div>
+            <img class="thumbs" src="thumbsdown.png" onclick=imgchange(this,"thumbsdown.png","thumbsup.png")>
+            <script>
+              var x=false
+              function imgchange(obj, imgX, imgY) {
+                if  (x) {
+                obj.src=imgX
+                }
+                else {
+                obj.src=imgY
+                }
+              x=!x
+              }
+            </script>
 
+            <p class="text">still alive bro</p>
           </div>
         </div>
       </div>

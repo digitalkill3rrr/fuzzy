@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  cursor: url(../images/skullpointer.png), url(../images/cursor.cur), auto;
 }
 
 p, li, a {
@@ -12,35 +13,49 @@ p, li, a {
 .menubar {
   display: flex;
   flex-direction: column;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-  margin: 20px 20px 0;
-  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 60px;
+  height: 100vh;
+  z-index: 99;
 }
 
-.bone1,
-.bone2 {
-  display: block;
-  width: 80px;
-  height: 30px;
-  background-image: url(../images/bone.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.levels {
+div.menu {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  position: fixed;
-  height: 100%;
-  z-index: 10;
-  padding: 0 0 30px 20px;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  width: 30px;
+  height: 100vh;
+  left: 30px;
+  margin: 0px 0px 500px 30px;
+}
+
+.vert {
+  display: block;
+  position: relative;
+  width: 7px;
+  height: 60px;
+  background-color: red;
+}
+
+.hor {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 7px;
+  bottom: 20px;
+  background-color: red;
 }
 
 .lvl {
   display: block;
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: 490px;
   font-size: 25px;
   transform: rotate(-90deg);
   color: red;
@@ -218,7 +233,7 @@ background: black;
   transition: all .4s ease-in-out;
   font-size: 55px;
   color: white;
-  cursor: pointer;
+  /*cursor: url(../images/skullpointer.png), url(../images/cursor.cur), auto;*/
   line-height: 100px;
 }
 
@@ -352,7 +367,7 @@ background: black;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
+  cursor: url(../images/skullpointer2.png), url(../images/cursor2.cur), auto;
   width: 400px;
   height: 400px;
   left: 240px;

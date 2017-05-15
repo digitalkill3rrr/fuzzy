@@ -5,8 +5,14 @@
 }
 
 .demons div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: relative;
   transition: all .6s ease-in-out;
@@ -223,11 +229,11 @@ div#d23:hover .eyeball1, div#d23:hover .eyeball2,
 div#d24:hover .eyeball1, div#d24:hover .eyeball2,
 div#d25:hover .eyeball1, div#d25:hover .eyeball2 {
   background-color: red;
+  -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   transition-property: color;
   transition-duration: 0.6s;
-  -webkit-box-shadow: 1px 1px 10px 4px rgba(255,0,0,1);
   box-shadow: 1px 1px 10px 4px rgba(255,0,0,1);
 }
 

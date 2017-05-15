@@ -26,11 +26,13 @@
 }
 
 .base {
+  -webkit-transform: translateZ(0);
   transform: translateZ(0);
   z-index: 4;
 }
 
 .fore {
+  -webkit-transform: translateZ(90px) scale(.7);
   transform: translateZ(90px) scale(.7);
   z-index: 1;
 }
@@ -39,8 +41,11 @@
 .parallax_group {
   position: relative;
   height: 100vh;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   background: black;
 }
 

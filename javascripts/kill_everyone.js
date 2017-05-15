@@ -11,5 +11,12 @@ $(function() {
     counter = Math.floor(counter)
     $('#pixels').text(counter)
     console.log(counter)
+  })
+
+  $('.menubar').scroll(function(e) {
+    counter = -($('.menu').offset().top)
+    counter = Math.floor(counter)
+    $('#.lvl').text(counter)
+    console.log(counter)
   });
 });

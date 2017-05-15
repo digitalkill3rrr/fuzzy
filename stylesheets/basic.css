@@ -415,20 +415,8 @@ background: black;
   background-image: url("../images/spooky.png");
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: url(../images/skullpointer2.png), url(../images/cursor2.cur), auto;
 }
-
-/*.morning {
-  position: absolute;
-  top: 370px;
-  width: 510px;
-  right: -60px;
-  color: white;
-}
-
-.morning:hover {
-  color: red;
-  transition: all .6s ease-in-out;
-}*/
 
 .box {
   position: absolute;
@@ -529,6 +517,15 @@ background: black;
 // 3 to 2
 // 2 to 1
 */
+
+/*PAGE 11*/
+
+.pause {
+  top: 50%;
+  width: 510px;
+  right: 50px;
+  color: white;
+}
 
 /*PAGE */
 

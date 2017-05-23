@@ -410,7 +410,7 @@ background: black;
 .image {
   position: relative;
   right: 150px;
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
   background-image: url("../images/spooky.png");
   background-size: cover;

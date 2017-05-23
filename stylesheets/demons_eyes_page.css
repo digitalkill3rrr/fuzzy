@@ -1,196 +1,35 @@
+#demon_text {
+  position: absolute;
+  color: red;
+  width: 510px;
+  position: absolute;
+  color: red;
+  width: 439px;
+  top: 310px;
+  left: 420px;
+  font-size: 50px;
+}
+
 .demons {
-  display: block;
-  width: 200%;
-  height: 200vh;
-}
-
-.demons div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   position: relative;
-  transition: all .6s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100vh;
+  /*background: white;*/
 }
 
-div#d1 {
-  width: 200px;
-  height: 200px;
-  left: 60px;
-  top: 330px;
+.eyeballs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
 }
 
-div#d2 {
-  width: 200px;
-  height: 200px;
-  top: 200px;
-  right: 140px;
-}
-
-div#d3 {
-  width: 200px;
-  height: 200px;
-  top: 100px;
-  left: 20px;
-}
-
-div#d4 {
-  width: 200px;
-  height: 200px;
-  bottom: 30px;
-  right: 300px;
-}
-
-div#d5 {
-  width: 200px;
-  height: 200px;
-  bottom: 300px;
-  left: 340px;
-}
-
-div#d6 {
-  width: 200px;
-  height: 200px;
-  bottom: 420px;
-  left: 180px;
-}
-
-div#d7 {
-  width: 200px;
-  height: 200px;
-  bottom: 590px;
-  right: 90px;
-}
-
-div#d8 {
-  width: 200px;
-  height: 200px;
-  bottom: 660px;
-  left: 300px;
-}
-
-div#d9 {
-  width: 200px;
-  height: 200px;
-  bottom: 870px;
-  right: 220px;
-}
-
-div#d10 {
-  width: 200px;
-  height: 200px;
-  bottom: 1480px;
-  right: 280px;
-}
-
-div#d11 {
-  width: 200px;
-  height: 200px;
-  bottom: 1280px;
-  left: 60px;
-}
-
-div#d12 {
-  width: 200px;
-  height: 200px;
-  bottom: 1800px;
-  left: 230px;
-}
-
-div#d13 {
-  width: 200px;
-  height: 200px;
-  bottom: 710px;
-  right: 180px;
-}
-
-div#d14 {
-  width: 200px;
-  height: 200px;
-  bottom: 1760px;
-  right: 60px;
-}
-
-div#d15 {
-  width: 200px;
-  height: 200px;
-  bottom: 2110px;
-  right: 450px;
-}
-
-div#d16 {
-  width: 200px;
-  height: 200px;
-  bottom: 2150px;
-  right: 370px;
-}
-
-div#d17 {
-  width: 200px;
-  height: 200px;
-  bottom: 2360px;
-  left: 460px;
-}
-
-div#d18 {
-  width: 200px;
-  height: 200px;
-  bottom: 2770px;
-  left: 460px;
-}
-
-div#d19 {
-  width: 200px;
-  height: 200px;
-  bottom: 2740px;
-  left: 173px;
-}
-
-div#d20 {
-  width: 200px;
-  height: 200px;
-  bottom: 3470px;
-  left: 450px;
-}
-
-div#d21 {
-  width: 200px;
-  height: 200px;
-  bottom: 3440px;
-  right: 560px;
-}
-
-div#d22 {
-  width: 200px;
-  height: 200px;
-  bottom: 3870px;
-  right: 500px;
-}
-
-div#d23 {
-  width: 200px;
-  height: 200px;
-  bottom: 4130px;
-  right: 80px;
-}
-
-div#d24 {
-  width: 200px;
-  height: 200px;
-  bottom: 4120px;
-  left: 560px;
-}
-
-div#d25 {
-  width: 200px;
-  height: 200px;
-  bottom: 4000px;
-  right: 580px;
+.eyeballs#e1 {
+  position: relative;
+  right: 40px;
 }
 
 .eyeball1,
@@ -199,35 +38,11 @@ div#d25 {
   height: 15px;
   border-radius: 50%;
   margin-left: 10px;
-  /*transition: all .4s ease-in-out;*/
+  transition: all .4s ease-in-out;
   background-color: black;
 }
 
-div#d1:hover .eyeball1, div#d1:hover .eyeball2,
-div#d2:hover .eyeball1, div#d2:hover .eyeball2,
-div#d3:hover .eyeball1, div#d3:hover .eyeball2,
-div#d4:hover .eyeball1, div#d4:hover .eyeball2,
-div#d5:hover .eyeball1, div#d5:hover .eyeball2,
-div#d6:hover .eyeball1, div#d6:hover .eyeball2,
-div#d7:hover .eyeball1, div#d7:hover .eyeball2,
-div#d8:hover .eyeball1, div#d8:hover .eyeball2,
-div#d9:hover .eyeball1, div#d9:hover .eyeball2,
-div#d10:hover .eyeball1, div#d10:hover .eyeball2,
-div#d11:hover .eyeball1, div#d11:hover .eyeball2,
-div#d12:hover .eyeball1, div#d12:hover .eyeball2,
-div#d13:hover .eyeball1, div#d13:hover .eyeball2,
-div#d14:hover .eyeball1, div#d14:hover .eyeball2,
-div#d15:hover .eyeball1, div#d15:hover .eyeball2,
-div#d16:hover .eyeball1, div#d16:hover .eyeball2,
-div#d17:hover .eyeball1, div#d17:hover .eyeball2,
-div#d18:hover .eyeball1, div#d18:hover .eyeball2,
-div#d19:hover .eyeball1, div#d19:hover .eyeball2,
-div#d20:hover .eyeball1, div#d20:hover .eyeball2,
-div#d21:hover .eyeball1, div#d21:hover .eyeball2,
-div#d22:hover .eyeball1, div#d22:hover .eyeball2,
-div#d23:hover .eyeball1, div#d23:hover .eyeball2,
-div#d24:hover .eyeball1, div#d24:hover .eyeball2,
-div#d25:hover .eyeball1, div#d25:hover .eyeball2 {
+.eyeballs:hover .eyeball1, .eyeballs:hover .eyeball2 {
   background-color: red;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -236,10 +51,3 @@ div#d25:hover .eyeball1, div#d25:hover .eyeball2 {
   transition-duration: 0.6s;
   box-shadow: 1px 1px 10px 4px rgba(255,0,0,1);
 }
-
-/*.eyeball1:hover,
-.eyeball2:hover {
-  background: red
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}*/

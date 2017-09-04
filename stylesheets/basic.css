@@ -130,6 +130,17 @@ div.menu {
 
 /*PAGE 3*/
 
+.title_num {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: 'Barrio', cursive;
+  font-size: 45px;
+  color: white;
+}
+
 #first {
   width: 170px;
   height: 250px;
@@ -286,9 +297,10 @@ background: black;
   width: 340px;
   height: 390px;
   background-size: cover;
+  cursor: url(../images/skullpointer2.png), url(../images/cursor2.cur), auto;
 }
 
-/*PAGE 6*/
+/*PAGE 7*/
 
 .move {
   display: -webkit-box;
@@ -378,7 +390,7 @@ background: black;
   to   {  -webkit-transform: rotate(360deg) translateX(15px) rotate(-360deg);}
 }
 
-/*PAGE 7*/
+/*PAGE 8*/
 
 .thumbs {
   position: relative;
@@ -405,13 +417,13 @@ background: black;
   color: white;
 }
 
-/*PAGE 10*/
+/*PAGE 9*/
 
 .image {
   position: relative;
-  right: 150px;
+  right: 210px;
   width: 90vw;
-  height: 100vh;
+  height: 120vh;
   background-image: url("../images/spooky.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -421,7 +433,7 @@ background: black;
 .box {
   position: absolute;
   top: 60%;
-  left: 50%;
+  left: 45%;
   -webkit-transform: translate(40%, -50%);
   transform: translate(40%, -50%);
   height: 160px;
@@ -518,7 +530,7 @@ background: black;
 // 2 to 1
 */
 
-/*PAGE 11*/
+/*PAGE 10*/
 
 .pause {
   top: 50%;
@@ -527,11 +539,55 @@ background: black;
   color: white;
 }
 
-/*PAGE */
+/*PAGE 11*/
 
 #pixels {
   position: relative;
   z-index: 999;
   color: red;
   font-size: 100px;
+}
+
+.share_wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 50px;
+  top: 50px;
+  /*background-color: cyan;*/
+}
+
+.share_button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border: 2px solid red;
+  color: white;
+  font-size: 20px;
+  cursor: url(../images/skullpointer.png), url(../images/cursor.cur), auto;
+  line-height: 50px;
+  transition: all .4s ease-in-out;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 879px) {
+  .image {
+    right: 350px;
+}
+
+.box {
+  left: 38%;
+  }
 }
